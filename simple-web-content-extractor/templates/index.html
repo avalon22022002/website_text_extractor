@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Text Extractor</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the page */
+        body {
+            background-color: #C8E4B2;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background-color: #9ED2BE;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        #myTextArea {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Website Text Extractor</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="url">Enter the URL of the website:</label>
+                <input type="text" class="form-control" id="url" name="url" value="{{ request.form['url'] if request.method == 'POST' else '' }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        {% if extracted_text %}
+        <h2 class="mt-4">Extracted Text:</h2>
+        <textarea id="myTextArea" class="form-control" rows="10" placeholder="Text will be displayed here">{{ extracted_text }}</textarea>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Designed a minimalist Flask web app for extracting text content from any website.
+Utilized BeautifulSoup from python for parsing HTML.
+Users can input a URL, and web app displays the extracted text. 
