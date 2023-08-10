@@ -6,4 +6,4 @@ Users can input a URL, and the app displays the extracted text.
 
 to run install flask
 run cmd
-python app.py
+"python app.py"
