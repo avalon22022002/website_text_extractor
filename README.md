@@ -7,3 +7,5 @@ Users can input a URL, and the app displays the extracted text.
 to run install flask
 run cmd
 "python app.py"
+
+demo vedio on youtube: https://youtu.be/b0KGNlBhbqA
