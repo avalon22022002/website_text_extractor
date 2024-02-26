@@ -10,8 +10,8 @@ run cmd
 
 demo vedio on youtube: https://youtu.be/b0KGNlBhbqA
 
-steps to run 
-cd simple-web-content-extractor
-pip install -r requirements.txt
-python app.py
+steps to run <\br>
+cd simple-web-content-extractor <\br>
+pip install -r requirements.txt <\br>
+python app.py<\br>
 
