@@ -9,3 +9,9 @@ run cmd
 "python app.py"
 
 demo vedio on youtube: https://youtu.be/b0KGNlBhbqA
+
+steps to run 
+cd simple-web-content-extractor
+pip install -r requirements.txt
+python app.py
+
